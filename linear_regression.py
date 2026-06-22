@@ -30,24 +30,24 @@ print("mean_squared_error:",mean_squared_error(y_test,y_pred))
 print("root_mean_squared_error:",np.sqrt(mean_squared_error(y_test,y_pred)))
 print("R2score:",r2_score(y_test,y_pred))
 
-print(x.info())
-study_hours_per_day=float(input("Enter study hours per day: "))
-# deep_work_sessions=float(input("Enter deep work sessions: "))
-# assignment_completion_rate=float(input("Enter assignment completion rate: "))
-# social_media_hours=float(input("Enter social media hours: "))
-procrastination_index=float(input("Enter procrastination index: "))
-sleep_hours=float(input("Enter sleep hours: "))
-revision_efficiency=float(input("Enter revision efficiency: "))
-consistency_score=float(input("Enter consistency score: "))
-new_data = pd.DataFrame({
-    'study_hours_per_day': [study_hours_per_day],
-    # 'deep_work_sessions': [deep_work_sessions],
-    # 'assignment_completion_rate': [assignment_completion_rate],
-    # 'social_media_hours': [social_media_hours],
-    'procrastination_index': [procrastination_index],
-    'sleep_hours': [sleep_hours],
-    'revision_efficiency': [revision_efficiency],
-    'consistency_score': [consistency_score]
-})
-new_prediction=model.predict(new_data)
-print(f"predicted final score: {new_prediction[0]:.2f}")
+# print(x.info())
+# study_hours_per_day=float(input("Enter study hours per day: "))
+# # deep_work_sessions=float(input("Enter deep work sessions: "))
+# # assignment_completion_rate=float(input("Enter assignment completion rate: "))
+# # social_media_hours=float(input("Enter social media hours: "))
+# procrastination_index=float(input("Enter procrastination index: "))
+# sleep_hours=float(input("Enter sleep hours: "))
+# revision_efficiency=float(input("Enter revision efficiency: "))
+# consistency_score=float(input("Enter consistency score: "))
+# new_data = pd.DataFrame({
+#     'study_hours_per_day': [study_hours_per_day],
+#     # 'deep_work_sessions': [deep_work_sessions],
+#     # 'assignment_completion_rate': [assignment_completion_rate],
+#     # 'social_media_hours': [social_media_hours],
+#     'procrastination_index': [procrastination_index],
+#     'sleep_hours': [sleep_hours],
+#     'revision_efficiency': [revision_efficiency],
+#     'consistency_score': [consistency_score]
+# })
+# new_prediction=model.predict(new_data)
+# print(f"predicted final score: {new_prediction[0]:.2f}")
